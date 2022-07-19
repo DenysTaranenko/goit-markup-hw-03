@@ -158,9 +158,11 @@ ul {
 .soft-section {
 }
 .soft-list {
+  display: flex;
 }
 .soft-item {
   list-style-type: none;
+  margin-right: 30px;
 }
 .soft-head {
   font-weight: 700;
@@ -169,13 +171,14 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .soft-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  padding-bottom: 9px;
+  padding-bottom: 10px;
 }
 .occupation {
 }
@@ -186,11 +189,14 @@ ul {
   line-height: 1.16;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+  text-align: center;
 }
 .occupation-list {
+  display: flex;
 }
 .occupation-item {
   list-style-type: none;
+  margin-right: 30px;
 }
 .team-section {
   background-color: #f5f4fa;
@@ -201,11 +207,18 @@ ul {
   line-height: 1.16;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+  text-align: center;
 }
 .team-list {
+  display: flex;
 }
 .team-item {
   list-style-type: none;
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
 }
 .team-name {
   font-style: normal;
