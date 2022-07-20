@@ -23,6 +23,7 @@ body {
   display: flex;
   align-items: center;
 }
+/* reset */
 p,
 h1,
 h2,
@@ -36,6 +37,12 @@ ul {
   padding-left: 0;
   margin: 0;
 }
+/* reset */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -44,6 +51,7 @@ ul {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border: 1px solid #ececec;
 }
 .header-logo {
   text-decoration: none;
@@ -66,6 +74,7 @@ ul {
 }
 .header-list {
   display: flex;
+  column-gap: 50px;
 }
 .header-item {
   font-style: normal;
@@ -74,13 +83,13 @@ ul {
   line-height: 1.14;
   list-style-type: none;
   letter-spacing: 0.02em;
-  margin-right: 50px;
 }
 .header-contacts {
   display: flex;
   align-items: center;
   margin-left: 331px;
   margin-left: auto;
+  column-gap: 50px;
 }
 .header-link {
   text-decoration: none;
@@ -96,7 +105,6 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style-type: none;
-  margin-right: 50px;
 }
 .header-mail-link {
   text-decoration: none;
@@ -126,6 +134,11 @@ ul {
 .hero {
   background-color: var(--hero-background);
   margin-bottom: 94px;
+  padding-top: 214px;
+  padding-bottom: 200px;
+}
+.btn-container {
+  text-align: center;
 }
 .main-subject {
   font-weight: 900;
@@ -149,6 +162,9 @@ ul {
   letter-spacing: 0.06em;
   color: #ffffff;
   font-family: inherit;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
 }
 .order-btn:hover,
 .order-btn:focus {
@@ -161,10 +177,10 @@ ul {
 }
 .soft-list {
   display: flex;
+  column-gap: 30px;
 }
 .soft-item {
   list-style-type: none;
-  margin-right: 30px;
 }
 .soft-head {
   font-weight: 700;
@@ -195,10 +211,10 @@ ul {
 }
 .occupation-list {
   display: flex;
+  column-gap: 30px;
 }
 .occupation-item {
   list-style-type: none;
-  margin-right: 30px;
 }
 .team-section {
   background-color: #f5f4fa;
@@ -213,10 +229,10 @@ ul {
 }
 .team-list {
   display: flex;
+  column-gap: 30px;
 }
 .team-item {
   list-style-type: none;
-  margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -242,11 +258,23 @@ ul {
 /* Portfolio Main Classes */
 .portfolio-nav {
 }
+.portf-container {
+}
+.nav-list-center {
+}
 .portfolio-nav-list {
+  column-gap: 8px;
+  margin: auto;
+  width: 611px;
+  display: flex;
+  justify-content: center;
 }
 .portfolio-nav-item {
   list-style-type: none;
   line-height: 1.62;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 16px;
 }
 .portfolio-nav-btn {
   border: 0;
@@ -254,7 +282,7 @@ ul {
   cursor: pointer;
   border-radius: 4px;
   font-family: inherit;
-  letter-spacing: 0.03em;
+  padding: 6px 22px;
 }
 .portfolio-nav-btn:hover,
 .portfolio-nav-btn:focus {
@@ -264,9 +292,21 @@ ul {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .projects-list {
+  gap: 30px;
+  list-style-type: none;
+  margin-top: 34px;
+  margin-bottom: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .projects-item {
-  list-style-type: none;
+  border: 1px solid #eeeeee;
+  padding-bottom: 20px;
+  width: 370px;
+}
+.project-item:last-child {
+  padding-bottom: 0;
 }
 .projects-link {
   text-decoration: none;
@@ -277,17 +317,21 @@ ul {
   line-height: 2;
   color: var(--main-text-color);
   letter-spacing: 0.06em;
+  padding: 20px 24px 4px;
 }
 .projects-discrip {
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-text-color);
   letter-spacing: 0.03em;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 /* Footer Classes */
 .footer {
   background-color: var(--footer-back-color);
-  padding: 60px 1240px 160px 220px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   font-family: "Raleway";
@@ -297,15 +341,19 @@ ul {
   color: #2196f3;
   text-decoration: none;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
 }
 .footer-adr {
   font-style: normal;
 }
 .footer-list {
+  margin-top: 20px;
 }
 .footer-item {
   list-style-type: none;
+  margin-bottom: 10px;
+}
+.footer-item:last-child {
+  margin-bottom: 0;
 }
 .map-link {
   font-size: 14px;
@@ -313,7 +361,6 @@ ul {
   color: #ffffff;
   text-decoration: none;
   letter-spacing: 0.03em;
-  margin-bottom: 9px;
 }
 .map-link:hover,
 .map-link:focus {
@@ -325,7 +372,6 @@ ul {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
-  margin-bottom: 9px;
 }
 .footer-mail:hover,
 .footer-mail:focus {
