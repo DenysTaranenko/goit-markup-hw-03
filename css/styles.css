@@ -70,8 +70,7 @@ img {
 .studio-link {
   color: var(--hover-link-color);
 }
-.header- nav {
-}
+
 .header-list {
   display: flex;
   column-gap: 50px;
@@ -171,10 +170,7 @@ img {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.order-btn-text {
-}
-.soft-section {
-}
+
 .soft-list {
   display: flex;
   column-gap: 30px;
@@ -198,8 +194,7 @@ img {
   color: var(--secondary-text-color);
   padding-bottom: 10px;
 }
-.occupation {
-}
+
 .occupation-head {
   font-style: normal;
   font-weight: 700;
@@ -256,12 +251,7 @@ img {
   padding-bottom: 30px;
 }
 /* Portfolio Main Classes */
-.portfolio-nav {
-}
-.portf-container {
-}
-.nav-list-center {
-}
+
 .portfolio-nav-list {
   column-gap: 8px;
   margin: auto;
@@ -275,6 +265,10 @@ img {
   letter-spacing: 0.03em;
   font-weight: 500;
   font-size: 16px;
+}
+.projects-bord {
+  border: 1px solid #eeeeee;
+  border-top: 0;
 }
 .portfolio-nav-btn {
   border: 0;
