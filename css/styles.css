@@ -49,9 +49,9 @@ img {
 }
 /* Header Classes */
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  border: 1px solid #ececec;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
+  border-bottom: 1px solid #ececec;
 }
 .header-logo {
   text-decoration: none;
@@ -93,6 +93,9 @@ img {
 .header-link {
   text-decoration: none;
   color: var(--header-link-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 .header-link:hover,
 .header-link:focus {
@@ -132,8 +135,7 @@ img {
 /* Index Main Classes */
 .hero {
   background-color: var(--hero-background);
-  margin-bottom: 94px;
-  padding-top: 214px;
+  padding-top: 200px;
   padding-bottom: 200px;
 }
 .btn-container {
@@ -170,13 +172,16 @@ img {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
+.soft-section {
+  padding-top: 94px;
+}
 .soft-list {
   display: flex;
   column-gap: 30px;
 }
 .soft-item {
   list-style-type: none;
+  width: 270px;
 }
 .soft-head {
   font-weight: 700;
@@ -184,7 +189,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-bottom: 9px;
   margin-bottom: 9px;
 }
 .soft-text {
@@ -192,7 +196,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  padding-bottom: 10px;
 }
 
 .occupation-head {
@@ -240,8 +243,12 @@ img {
   line-height: 1.18;
   color: var(--main-text-color);
   letter-spacing: 0.03em;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.team.block {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-work {
   font-size: 16px;
@@ -251,11 +258,8 @@ img {
   padding-bottom: 30px;
 }
 /* Portfolio Main Classes */
-
 .portfolio-nav-list {
   column-gap: 8px;
-  margin: auto;
-  width: 611px;
   display: flex;
   justify-content: center;
 }
@@ -269,6 +273,7 @@ img {
 .projects-bord {
   border: 1px solid #eeeeee;
   border-top: 0;
+  padding: 20px 24px 4px;
 }
 .portfolio-nav-btn {
   border: 0;
@@ -288,14 +293,12 @@ img {
 .projects-list {
   gap: 30px;
   list-style-type: none;
-  margin-top: 34px;
-  margin-bottom: 34px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 34px;
 }
 .projects-item {
-  padding-bottom: 20px;
   width: 370px;
 }
 .project-item:last-child {
@@ -310,15 +313,13 @@ img {
   line-height: 2;
   color: var(--main-text-color);
   letter-spacing: 0.06em;
-  padding: 20px 24px 4px;
+  margin-bottom: 4px;
 }
 .projects-discrip {
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-text-color);
   letter-spacing: 0.03em;
-  padding-right: 24px;
-  padding-left: 24px;
 }
 /* Footer Classes */
 .footer {
@@ -337,9 +338,9 @@ img {
 }
 .footer-adr {
   font-style: normal;
+  margin-top: 20px;
 }
 .footer-list {
-  margin-top: 20px;
 }
 .footer-item {
   list-style-type: none;
